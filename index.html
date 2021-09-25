@@ -4,19 +4,18 @@
 
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel = "stylesheet" href = "style.css">
         <script src = "main.js"></script>
         <title> About Noah </title>
     </head>
 
     <body>
-        <!-- Use any element to open the sidenav -->
-        <span onclick="openNav()">open</span>
-
         <div id = main>
             <!-- Building the Side Navigation-->
             <div id=mySidenav class=sidenav>
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a id = "closenav" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="#">NOAH</a>
                 <a href="#">EXPERIENCE</a>
                 <a href="#">PROJECTS</a>
@@ -26,9 +25,12 @@
 
             <!-- Building the Header -->
             <div class=header>
-                <h1> NOAH KIM </h1>
-                <h2> Entrepreneur / Software Developer </h2>
+                <!-- Use any element to open the sidenav -->
+                <span class="openNav" id="myOpenNav" onclick="openNav()">open</span>
+                <h1 class="my-name"> NOAH KIM </h1>
             </div>
+
+            <h2 id="job-title" class="job-title"> Entrepreneur / Software Developer </h2>
 
             <!-- Add all page content inside this div if you want the side nav to
                 push page content to the right (not used if you only want the
