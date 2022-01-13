@@ -7,30 +7,80 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel = "stylesheet" href = "style.css">
-        <script src = "main.js"></script>
+        <script src = "main.js" defer></script>
         <title> About Noah </title>
     </head>
 
     <body>
         <div id = main>
-            <!-- Building the Side Navigation-->
-            <div id=mySidenav class=sidenav>
-                <a id = "closenav" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#">NOAH</a>
-                <a href="#">EXPERIENCE</a>
-                <a href="#">PROJECTS</a>
-                <a href="#">GITHUB</a>
-                <a href="#">CONTACT</a>
-            </div>
 
-            <!-- Building the Header -->
-            <div class=header>
+            <!-- NAVIGATION BAR -->
+            <nav id="header" class="header">
                 <!-- Use any element to open the sidenav -->
-                <span class="openNav" id="myOpenNav" onclick="openNav()">open</span>
-                <h1 id="name" class="myName"> NOAH H. KIM </h1>
+                <!-- <span class="openNav" id="myOpenNav" onclick="openNav()">open</span> -->
+                <div id="nhk" class="nav-item">NHK</div>
+                <div class="nav-item">About</div>
+                <div class="nav-item">Projects</div>
+                <div class="nav-item">Skills</div>
+                <div class="nav-item">Timeline</div>
+                <div class="nav-item">Resume</div>
+                <div class="nav-item">Articles</div>
+            </nav>
+
+            <!-- myTitles -->
+            <div class="my-titles">
+                <div id="my-job-title" class="my-job-title"> 
+                    <!-- Marketer, Management Consultant, Entrepreneur, Software Engineer-->
+                    Full Stack Software Engineer
+                </div>
+                <div id="my-name" class="my-name">
+                    Noah H. Kim
+                </div>
+                <div id="my-slogan" class="my-slogan">
+                    Make your dream a reality
+                </div>
             </div>
 
-            <h2 id="jobTitle" class="myJobTitle"> Entrepreneur / Software Developer </h2>
+            <div id="brands-ribbon" class="brands">
+                <!-- this is where brand icons will go -->
+                <a href="https://www.accenture.com" target="_blank">
+                    <img id="accenture-logo" class="brand grayscale" src="images/Accenture.svg" alt="accenture logo black and white">
+                </a>
+                <a href="https://www.glassdoctor.com" target="_blank">
+                    <img id="glass-dr-logo" class="brand grayscale" src="images/glassDoctorLogo.png" alt="glass doctor logo">
+                </a>
+                <a href="https://www.businessexpocenter.com" target="_blank">
+                    <img id="bec-logo" class="brand grayscale" src="images/businessExpoCenter.png" alt="business expo center logo">
+                </a>
+                <a href="https://www.smu.edu" target="_blank">
+                    <img id="smu-logo" class="brand grayscale" src="images/SMUwPerunaRrgb.png" alt="SMU red logo">
+                </a>
+            </div>
+
+            <div id="about-me" class="about-me">                
+                I started coding because I wanted to build a mobile application to help people
+                find better food faster.
+                <br>
+                <br>
+                I never expected to quit my job, but I did and I haven't looked back since.
+                <br>
+                <br>
+
+                I love working with others to build something we are passionate about.
+                What matters to me most is family and achieving my dreams. My professional interests include
+                intuitive design, digital marketing, big data, analytics, and 
+                entrepreneurship.
+                <br>
+                <br>
+                I've been lucky to be able to quit my job and learn how to code to pursue a business
+                idea I have.
+                <br>
+                <br>
+                In a previous life, I was a management consultant at Accenture and worked on 10 projects across
+                7 clients focusing on master data management (MDM), robotic process automation (RPA), data
+                analytics, and data strategy.
+
+            </div>
 
             <div class="snapshot">
                 <div class="snapCard">

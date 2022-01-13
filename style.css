@@ -1,89 +1,106 @@
- /* The sidenav */
-.sidenav {
-    height: 100%;
-    width: 180px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color:#030c1f;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    padding-top: 12px;
-    transition: 330ms;
-}
 
-.sidenav a {
-    margin-left: 15px;
-    padding: 3px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.sidenav a:hover {
-    filter: brightness(150%);
-    color: grey;
-}
-
-#closenav {
-    display: flex;
-    justify-content: right;
-    filter: brightness(150%);
-    margin-bottom: 10px;
-    margin-right: 20px;
-}
-
-/* original
-.sidenav a {
-    padding: 8px, 8px, 8px, 32px;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    color: #ffffff;
-    display: block;
-    text-align: left;
-    transition: 0.3s;
-} */
-
-/* Page content */
+/* BODY & MAIN */
 body {
-    background-color: #031532;
+    margin: 0px;
+    background-color: rgb(255, 255, 255);
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #main {
-    color: white;
     font-family: Arial, Helvetica, sans-serif;
 } 
 
+/* NAVIGATION BAR */
 .header {
+    background-color: rgb(15, 34, 58);
+    padding: 0rem 20rem;
+    color: white;
+    height: 60px;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
-}
-
-#myOpenNav {
-    display: flex;
     align-items: center;
-    flex: initial;
 }
 
-#name {
-    display: flex;
-    justify-content: center;
-    flex: 1;
+#nhk {
+    margin: 0px 4rem;
+    font-size: 1rem;
 }
 
-#jobTitle {
+.nav-item {
+    margin: 0px 10px;
+    font-size: 14px;
+}
+
+/* TITLE, NAME, SLOGAN */
+
+.my-titles {
+    background-color: rgb(15, 34, 58);
+    color: white;
+}
+
+#my-job-title {
+    padding-top: 15rem;
     display: flex;
     justify-content: center;
-    padding-top: 300px;
-    padding-bottom: 300px;
-    font-size: 30px;
-    font-weight: lighter;
-    background-color: white;
-    color: #828282;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#my-name {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    padding: 25px 0px;
+}
+
+#my-slogan {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 35rem;
+}
+
+/* BRANDS RIBBON*/
+#brands-ribbon {
+    margin: 5rem 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grayscale {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.brand {
+    height: 2rem;
+    margin: 0rem 2rem;
+    transition: 0.5s;
+}
+
+.brand:hover {
+    transform: scale(1.3);
+}
+
+#glass-dr-logo {
+    height: 3rem;
+}
+
+#bec-logo {
+    height: 4rem;
+}
+
+#smu-logo {
+    height: 4rem;
+}
+
+/* ABOUT ME */
+#about-me {
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 100px;
 }
 
 /* SNAPSHOT */
